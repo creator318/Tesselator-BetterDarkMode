@@ -1,5 +1,4 @@
-# Tesselator-BetterDarkMode
-Better Dark Mode UserCSS for Tesselator and Telescope for use with [dark reader](https://darkreader.org/) extension.
+# Tesselator-BetterDarkModeBetter Dark Mode UserCSS for Tesselator and Telescope for use with [dark reader](https://darkreader.org/) extension.
 Makes the UI look better by making it look flat by removing (or hiding) gradients and image backgrounds.
 
 ## Note: 
@@ -13,4 +12,4 @@ Makes the UI look better by making it look flat by removing (or hiding) gradient
 # Preview  
 Before|After
 -|-
-![Old](Editor%20old.png)|![New](Editor.png)
+![Old](Editor-old.png)|![New](Editor.png)
