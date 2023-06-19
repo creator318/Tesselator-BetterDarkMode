@@ -1,0 +1,64 @@
+/* ==UserStyle==
+@name           Tesselator/Telescope Better Dark mode
+@namespace      github.com/creator318/BetterDarkMode
+@version        1.0.0
+@description    Better dark mode for KMIT Tesselator/Telescope to be used along                 with DarkReader Browser Extension, Supports Firefox/Chrome/Edge.
+@author         Jai Parmar
+==/UserStyle== */
+@-moz-document url-prefix("http://kmitonline.com/mod/vpl/forms/edit.php"), url-prefix("http://10.11.51.100/mod/vpl/forms/edit.php") {
+  .ui-helper-clearfix:before,
+  .ui-helper-clearfix:after {
+    content: "";
+    border-collapse: collapse
+  }
+
+  header nav.navbar-inner div.container-fluid {
+    background-color: #012951
+  }
+
+  .ui-menu,
+  .ui-menu-item {
+    list-style-image: none;
+  }
+
+  .ui-progressbar,
+  .ui-dialog,
+  .ui-buttonset,
+  .ui-dialog-content,
+  .ui-dialog-titlebar,
+  .ui-progressbar-overlay,
+  .ui-widget-content,
+  .ui-widget-header,
+  .ui-state-focus,
+  .ui-state-active,
+  .ui-state-highlight,
+  .ui-widget,
+  .ui-state-default,
+  .ui-widget-overlay,
+  .ui-widget-shadow {
+    background: none;
+    border: 1px solid inherit;
+  }
+
+  .ui-buttonset a[id^='vpl_ide_'],
+  .ui-buttonset :not(.ui-button-disabled) {
+    background: none;
+    background-color: #666;
+    border: 1px solid inherit;
+  }
+
+  .ui-buttonset a.ui-button-disabled,
+  a.ui-button-disabled span.ui-button-text i {
+    background-color: #222;
+  }
+
+  .ui-dialog-titlebar {
+    background-color: #111;
+  }
+
+  .ui-dialog,
+  .vpl_ide_dialog {
+    background-color: #222;
+    opacity: 100%
+  }
+}
