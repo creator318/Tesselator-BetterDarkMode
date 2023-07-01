@@ -2,7 +2,7 @@
 Makes the UI look better by making it look flat by removing (or hiding) gradients and image backgrounds.
 
 ## Note: 
- - Makes only the editor page look better and doesn't touch other pages on Tesselator/Telescope or any other websites.
+ - Makes only the editor page and the header look better for Tesselator/Telescope and doesn't touch any other websites.
 
 ## Installation 
  - Install [Dark Reader](https://darkreader.org) and [Stylus](https://add0n.com/stylus.html).  
