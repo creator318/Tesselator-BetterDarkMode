@@ -5,15 +5,12 @@
 @description    Better dark mode for KMIT Tesselator/Telescope to be used along                 with DarkReader Browser Extension, Supports Firefox/Chrome/Edge.
 @author         Jai Parmar
 ==/UserStyle== */
+
 @-moz-document url-prefix("http://kmitonline.com/mod/vpl/forms/edit.php"), url-prefix("http://10.11.51.100/mod/vpl/forms/edit.php") {
   .ui-helper-clearfix:before,
   .ui-helper-clearfix:after {
     content: "";
     border-collapse: collapse
-  }
-
-  header nav.navbar-inner div.container-fluid {
-    background-color: #012951
   }
 
   .ui-menu,
@@ -23,7 +20,10 @@
 
   .ui-progressbar,
   .ui-dialog,
+  .ui-button,
   .ui-buttonset,
+  .ui-button-text,
+  .ui-button-text-only,
   .ui-dialog-content,
   .ui-dialog-titlebar,
   .ui-progressbar-overlay,
@@ -34,6 +34,8 @@
   .ui-state-highlight,
   .ui-widget,
   .ui-state-default,
+  .ui-widget-content,
+  .ui-widget-header,
   .ui-widget-overlay,
   .ui-widget-shadow {
     background: none;
@@ -60,5 +62,11 @@
   .vpl_ide_dialog {
     background-color: #222;
     opacity: 100%
+  }
+}
+
+@-moz-document domain("kmitonline.com"), domain("10.11.51.100") {
+    header nav.navbar-inner div.container-fluid {
+    background-color: #012951;
   }
 }
