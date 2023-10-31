@@ -65,7 +65,7 @@
   }
 
   .vpl_ide_tr {
-    overflow: clip
+    overflow: hidden
   } 
 }
 
