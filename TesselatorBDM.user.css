@@ -63,6 +63,10 @@
     background-color: #222;
     opacity: 100%
   }
+
+  .vpl_ide_tr {
+    overflow: clip
+  } 
 }
 
 @-moz-document domain("kmitonline.com"), domain("10.11.51.100") {
