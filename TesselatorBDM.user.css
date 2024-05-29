@@ -1,12 +1,12 @@
 /* ==UserStyle==
 @name           Tesselator/Telescope Better Dark mode
 @namespace      github.com/creator318/BetterDarkMode
-@version        1.0.3
+@version        1.0.4
 @description    Better dark mode for KMIT Tesselator/Telescope to be used along with DarkReader Browser Extension, Supports Firefox/Chrome/Edge.
 @author         Jai Parmar
 ==/UserStyle== */
 
-@-moz-document url-prefix("http://kmitonline.com/mod/vpl/forms/edit.php"), url-prefix("http://10.11.51.100/mod/vpl/forms/edit.php") {
+@-moz-document regexp("http://kmitonline.com/.*mod/vpl/forms/edit.php.*"), regexp("http://10.11.51.100/.*mod/vpl/forms/edit.php.*") {
   .ui-helper-clearfix:before,
   .ui-helper-clearfix:after {
     content: "";
