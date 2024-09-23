@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Tesselator/Telescope Better Dark mode
 @namespace      github.com/creator318/BetterDarkMode
-@version        1.0.4
+@version        1.0.5
 @description    Better dark mode for KMIT Tesselator/Telescope to be used along with DarkReader Browser Extension, Supports Firefox/Chrome/Edge.
 @author         Jai Parmar
 ==/UserStyle== */
@@ -18,6 +18,10 @@
     list-style-image: none;
   }
 
+  .ui-tabs-anchor {
+    background-color: #444;
+  }
+  
   .ui-progressbar,
   .ui-dialog,
   .ui-button,
