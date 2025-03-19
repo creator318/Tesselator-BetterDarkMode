@@ -1,12 +1,32 @@
 /* ==UserStyle==
 @name           Tesselator/Telescope Better Dark mode
 @namespace      github.com/creator318/BetterDarkMode
-@version        1.1.0
-@description    Better dark mode for KMIT Tesselator/Telescope to be used along with DarkReader Browser Extension, Supports Firefox/Chrome/Edge.
+@version        1.2.0
+@description    Better dark mode for KMIT Tesselator/Telescope to be used along with DarkReader Browser Extension, Supports Firefox/Chrome/Edge. Now featuring QoL improvements as well.
 @author         Jai Parmar
 ==/UserStyle== */
+@-moz-document regexp("http://kmitonline.com/.*/mod/quiz/.*"), regexp("http://10.11(.([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){2}/.*/mod/quiz/.*") {
+  * {
+    user-select: none;
+  }
+  
+  #page-content {
+       
+    .qno, .qtext, .qtext *, .answer, .answer * {
+      user-select: text;
+    }
 
-@-moz-document regexp("http://kmitonline.com/.*mod/vpl/forms/edit.php.*"), regexp("http://10.11(.([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){2}/.*mod/vpl/forms/edit.php.*") {
+    p:has(br:only-child) {
+      display: none;
+    }
+
+    .answernumber {
+      user-select: none;
+    }
+  }  
+}
+
+@-moz-document regexp("http://kmitonline.com/.*/mod/vpl/forms/edit.php.*"), regexp("http://10.11(.([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){2}/.*/mod/vpl/forms/edit.php.*") {
   html[data-darkreader-mode="dynamic"] {
     .ui-helper-clearfix:before,
     .ui-helper-clearfix:after {
@@ -75,9 +95,5 @@
   header nav, nav.navbar.fixed-top,
   section#footer-bottom  {
     background-color: #012951 !important;
-  }
-  
-  .qtext {
-    user-select: text
   }
 }
